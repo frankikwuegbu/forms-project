@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    width: 100%;
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: linear-gradient(to right, rgb(201, 252, 201), rgb(147, 224, 147),rgb(107, 248, 107));
+}
+
+.wrapper {
+    /* border: 2px solid black; */
+    background: #fff;
+    max-width: 390px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 40px 1px rgb(110, 148, 110);
+}
+
+.wrapper .title-box {
+    /* border: 2px solid red; */
+    display: flex;
+    width: 200%;
+}
+
+.wrapper .title-box .title {
+    width: 50%;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-box .form-inner .login .input {
+    /* border: 2px solid green; */
+    margin-top: 20px;
+    /* margin-bottom: 5px; */
+}
+
+.login .input input {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid rgb(126, 121, 121);
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.4s ease;
+}
+
+.login .input input:focus {
+    border-bottom: 1px solid rgb(28, 175, 28);
+    border-bottom-width: 2px;
+}
+
+.login .signup-link {
+    /* border: 2px solid green; */
+    margin-top: 30px;
+    text-align: center;
+}
+
+.login .password-link {
+    /* border: 2px solid red; */
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(42, 235, 42);
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.form-box .form-inner form .input .button {
+    background: linear-gradient(to right, rgb(32, 150, 32), rgb(42, 235, 42) );
+    cursor: pointer;
+}
+
+.form-box .form-inner form .input .button:hover {
+    background: linear-gradient(to left, rgb(32, 150, 32), rgb(42, 235, 42) );
+    cursor: pointer;
+}
