@@ -1,6 +1,5 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './LoginStyle.css';
-import Signup from './Signup';
 
 export default function Login() {
     return (
@@ -21,11 +20,11 @@ export default function Login() {
                             <div className="login-input">
                                 <input className="field" type="text" placeholder="password" required />
                             </div>
-                            <div className="password-link"><a href="#">Forgot password?</a></div>
+                            <div className="password-link"><Link href="#">Forgot password?</Link></div>
                             <div className="button-box">
-                                <Link to='/signup'>Login</Link>
+                                <Link className='login-button' to='/home'>Login</Link>
                             </div>
-                            <div className="signup-link">Not a member? <a href="#">Signup here</a></div>
+                            <div className="signup-link">Not a member? <a href="/signup">Signup here</a></div>
                         </form>
                     </div>
                 </div>

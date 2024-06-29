@@ -28,6 +28,7 @@ html, body{
 
 .login-wrapper .login-titlebox {
     /* border: 2px solid red; */
+    text-align: center;
     width: 100%;
     font-size: 40px;
     font-weight: 600;
@@ -37,7 +38,6 @@ html, body{
 .login-formbox {
     /* border: 2px solid blue; */
     width: 100%;
-    /* padding: 50px; */
 }
 
 .login-forminner {
@@ -56,27 +56,56 @@ html, body{
     outline: none;
 }
 
+.login-forminner .login-form .login-input input:focus {
+    border: 1px solid rgb(114, 248, 120);
+}
+
 .login-form .password-link {
     /* border: 2px solid brown; */
     margin-top: 10px;
 }
 
+.login-form .password-link a {
+    text-decoration: none;
+    color: rgb(30, 187, 30);
+}
+
+.login-form .password-link a:hover {
+    text-decoration: underline;
+}
+
 .login-form .button-box {
-    /* border: 2px solid salmon; */
-    margin-top: 10px;
+    /* border: 1px solid burlywood; */
+    margin-top: 20px;
+    text-align: center
 }
 
 .login-form .button-box .login-button {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    border-radius: 4px;
     border: 1px solid grey;
-    outline: none;
-    cursor: pointer;
+    border-radius: 4px;
+    padding: 8px 100px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    background: linear-gradient(to right, rgb(32, 150, 32), rgb(42, 235, 42) );
+}
+
+.login-form .button-box .login-button:hover {
+    background: linear-gradient(to left, rgb(32, 150, 32), rgb(42, 235, 42) );
 }
 
 .login-form .signup-link {
     /* border: 2px solid orange; */
     margin-top: 20px;
+    text-align: center;
+}
+
+.login-form .signup-link a {
+    text-decoration: none;
+    color: rgb(30, 187, 30);
+}
+
+.login-form .signup-link a:hover {
+    text-decoration: underline;
 }
