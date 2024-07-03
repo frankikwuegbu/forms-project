@@ -1,0 +1,16 @@
+POST http://localhost:5000/auth/register
+content-type: application/json
+
+{
+    "username": "Jane doe",
+    "email": "jane.doe@gmail.com",
+    "password": "testpassword"
+}
+
+POST http://localhost:5000/auth/register
+
+{
+    "username": "alexander",
+    "password": "Password1234",
+    "confirmPassword": "Password1234",
+}
